@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+    body{
+      background-color: rgb(17, 17, 17);  
+    }
+    .main{
+        background-color: rgb(255, 99, 71);
+         margin-left: 10%;
+        margin-top: 5%;
+        margin-right: 10%; 
+    }
+    h1{
+        color: rgb(196, 71, 49);
+        
+    }
+    .box{
+            background-color: rgb(255, 146, 126);
+            
+            width: 90%;
+            /* height: 50px; */
+            border: 3px solid rgb(255, 211, 205);
+            border-radius: 10px;
+            /* text-align: center; */
+            box-sizing: border-box;
+            padding:30px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+        input{
+            width: 50%;
+            border-radius: 5px;
+            border-style: none;
+            font-size: 40px;
+            font-family: 'Gabriola';
+        }
+       
+        .lab{
+             float: left;
+             width: 100%;
+              /* height: 70%;   */
+              border: 1px solid black;  
+        }
+        .radio{
+               /* float: left;   */ 
+               height: 50px;
+              width: 100%; 
+           
+             /* border: 1px solid black; 
+              */
+
+        }
+        .d1{
+              float: left;  
+            width: 25%;
+           
+        }
+       .d2{
+           float: left;
+           width: 40%;
+           
+       }
+       .btn{
+           background-color: rgb(196, 71, 49);
+           color: white;
+           border-radius: 40px;
+           text-align: center;
+           font-size: 30px;
+           border: none;
+           width: 170px;
+           height: 50px;
+           
+       }
+</style>
+</head>
+<body>
+    <h1 style="color: rgb(17, 17, 17); font-size: 50px;  text-shadow: 2px 2px dimgray">Payment Form</h1>
+    <div class="main">
+        
+        <h1>Step 1: Your details</h1>
+        <form action="">
+        <div class="box">
+            <label for="">Name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" name="name" placeholder="First and last name">
+        </div>
+        <div class="box">
+            <label for="">Email</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="email" name="email" placeholder="example@domain.com">
+        </div>
+        <div class="box">
+            <label for="">Phone</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="tel" name="phone" placeholder="Eg. +92345 0000000">
+        </div>
+        <h1>Step 2: Delivery address</h1>
+        <div class="box">
+            <label for="">Address</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <textarea name="address"  cols="55" rows="10"></textarea>
+        </div>
+        <div class="box">
+            <label for="">Post code</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="number" name="pin" id="">
+        </div>
+        <div class="box">
+            <label for="">Country</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" name="Country" id="">
+        </div>
+        <h1>Step 3: Card details</h1>
+        <div  class="box">
+            <!-- <div class="lab"> -->
+            <label for="">cardType</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <!-- </div> -->
+             <div class="radio">
+                <div class="d1"><input type="radio" name="cardType"/><i class="fab fa-cc-visa"></i>VISA</div>
+                <div class="d1"><input type="radio" name="cardType"/><i class="fas fa-credit-card"></i>Debit</div>
+                <div class="d2"><input type="radio" name="cardType"/><i class="fab fa-cc-mastercard"></i>Mastercard</div>
+             </div>
+            <!-- <div class="d1"><input type="radio" name="cardType"><i class="fab fa-cc-visa"></i>VISA</div>
+                <div class="d1"><input type="radio" name="cardType"><i class="fas fa-credit-card"></i>Debit</div>
+                <div class="d1"><input type="radio" name="cardType"><i class="fab fa-cc-mastercard">Mastercard</i></div> -->
+        </div>
+        <div class="box">
+            <label for="">Card number</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="number" name="cardNumber" id="">
+        </div>
+        <div class="box">
+            <label for="">Security code</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="number" name="sCode" id="">
+        </div>
+        <div class="box">
+            <label for="">Name on Card</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" name="cardName" id="" placeholder="Exact name as on the card">
+        </div>
+      <center> <button   class="btn" type="submit">BUY IT!</button></center>
+    </form>
+    </div>
+</body>
+</html>

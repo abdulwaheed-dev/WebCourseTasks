@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        #main{
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 500px;
+            height: 400px;
+        }
+        b{
+            font-size: 25px;
+        }
+        #uname,#pass{
+            width: 200px;
+            height: 30px;
+            border-radius: 3px;
+            border-width: 0px;
+        }
+        #pass{
+            padding-left:8px;
+        }
+        .btn{
+            width: 162px;
+            height: 30px;
+            border-radius: 3px;
+            border-width: 0px;
+        }
+        input:hover{
+            opacity: 1;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="main">
+            <br>
+            <img src="https://www.iconpacks.net/icons/1/free-user-login-icon-305-thumb.png" alt="loginImage" width="150px" height="150px">
+            <form action="">
+                <br>
+                <b>Username: </b>
+                <input type="text" name="username" id="uname" placeholder="Enter Username">
+                <br><br>
+                <b>Password: </b>
+                <input type="password" name="password" id="pass" placeholder="Enter Password">
+                <br><br>
+                <input type="submit" value="Login" class="btn">
+                <input type="button" value="Cancel" class="btn">
+                <br><br>
+                <label for="rememberme">
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    Remember Me
+                </label>
+                <br>
+                Forget <a href="www.google.com">Password?</a>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
